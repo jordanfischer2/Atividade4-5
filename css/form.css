@@ -1,0 +1,81 @@
+:root {
+    --primary: #05174b;
+    --secondary: #3b82f6;
+    --accent: #eb7c2d;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --gray: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+.cabecalho {
+    background: linear-gradient(135deg, var(--dark), var(--primary));
+    color: var(--accent);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.imagem__logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.cabecalho__texto p {
+    color: white;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+#cta-btn {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+#cta-btn:hover {
+    background-color: var(--gray);
+    color: var(--accent);
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--primary);
+    
+}
+
+.container p {
+    text-align: center;
+    margin-bottom: 60px;
+}
+

@@ -12,6 +12,23 @@
             <img src="../assets/images/LOGO_HORIZONTAL_COLORIDO2_HOLLZ.png" alt="logo"/>            
             <p>Móveis de alto padrão com ferragens inteligentes</p>
             <a href="formulario.html">Solicite seu orçamento</a>
+            
+            <div id="menu" class="cabecalho__menu">
+                <button id="botao-contato" onclick="mostrarContato()">Contato</button>
+                <div id="mensagem-telefone"></div>
+                <div id="mensagem-email"></div>
+            </div>
+
+            <script>
+       
+                function mostrarContato() {
+                    const botao = document.getElementById("botao-contato");
+                    document.getElementById("mensagem-telefone").innerText = "Telefone: (51) 99715-2423"
+                    document.getElementById("mensagem-email").innerText = "E-mail: contato@hollz.com.br"
+                    botao.style.display = "none";
+                }
+                
+            </script>
         
         </header>
 
@@ -31,8 +48,29 @@
         </div>
 
         <footer class="footer">
-            <div>
+            <div class="container-footer">
+                <div class="coluna-footer">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Serviços</a></li>
+                    </ul>
+                </div>
+
+                <div class="coluna-footer">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="direitos-autorais">
                 <p>&copy; 2026 Hollz Móveis Planejados. Todos os direitos reservados.</p>
             </div>
+        </footer>
     </body>
 </html>

@@ -26,7 +26,7 @@ body {
 }
 
 .cabecalho img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     margin: 0 auto; 
 }
@@ -107,8 +107,6 @@ body {
 .campo-curto {
     width: 90px;
 }
-
-
 
 button {
     margin-top: 35px;

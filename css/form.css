@@ -10,25 +10,68 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', system-ui, sans-serif;
-    width: 100%;
+
+}
+
+body {
+    background: var(--primary);
+    line-height: 1.6;
+}
+
+.cabecalho {
+    background: var(--primary);
+    color: var(--accent);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cabecalho img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto; 
+}
+
+.cabecalho p {
+    color: white;
+    font-size: 22px;
+    height: auto;
+    margin: 50px auto 50px;
+    
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--accent);
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.cabecalho a:hover {
+    background-color: white;
+    color: var(--accent);
+    transform: scale(1.05);
 }
 
 .formulario {
-    background: linear-gradient(135deg, var(--dark), var(--primary));
+    background: var(--primary);
     padding: 30px 40px;
     max-width: 500px;
     margin: 0 auto;
 }
 
 .formulario h1 {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     text-align: center;
     color: white;
-    background-color: var(--accent);
-    padding: 20px 40px;
-    font-size: 1.3rem;
+    padding: 20px 10px;
+    font-size: 1.6rem;
     font-weight: bold;
-    border-radius: 10px;
 }
 
 .formulario label {
@@ -65,15 +108,16 @@
     width: 90px;
 }
 
+
+
 button {
     margin-top: 35px;
-    text-align: center;
     color: white;
     background-color: var(--accent);
     padding: 20px 40px;
     font-size: 1.3rem;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 40px;
     cursor: pointer;
     transition: background 0.2s, transform 0.2s;
 }
@@ -89,4 +133,58 @@ button:hover {
     font-size: 18px;
     color: white;
     text-align: center;
+}
+
+.footer {
+    background-color: var(--primary);
+    color: white;            
+    padding: 30px 20px 10px;
+    font-family: sans-serif;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.coluna-footer {
+    margin-bottom: 20px;
+    min-width: 200px;
+}
+
+.coluna-footer h3 {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.coluna-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna-footer ul li {
+    margin-bottom: 10px;
+}
+
+.coluna-footer ul li a {
+    color: var(--light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.coluna-footer ul li a:hover {
+    color: var(--accent);
+}
+
+.direitos-autorais {
+    text-align: center;
+    border-top: 1px solid var(--light);
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 16px;
+    color: white;
 }

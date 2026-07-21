@@ -34,9 +34,7 @@ body {
 .cabecalho p {
     color: white;
     font-size: 22px;
-    height: auto;
     margin: 50px auto 50px;
-    
 }
 
 .cabecalho a {
@@ -59,10 +57,9 @@ body {
 }
 
 .formulario {
-    background: var(--primary);
-    padding: 30px 40px;
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto;
+    height: auto;
 }
 
 .formulario h1 {
